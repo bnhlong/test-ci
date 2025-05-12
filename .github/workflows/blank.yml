@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-  steps:
+    steps:
       - name: Checkout repo
         uses: actions/checkout@v2
 
@@ -33,4 +33,6 @@ jobs:
         with:
           api-key: ${{ secrets.BC_API_KEY }}
           use-enforcement-rules: true
+          repo-id: ${{ github.repository }}
+          branch: ${{ github.ref_name }}
           
