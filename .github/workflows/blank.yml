@@ -32,4 +32,5 @@ jobs:
           PRISMA_API_URL: https://api.sg.prismacloud.io
         with:
           api-key: ${{ secrets.BC_API_KEY }}
-      - run: checkov -d . --bc-api-key $BC_API_KEY --repo-id ${{ github.repository }} --branch ${{ github.ref_name }} --use-enforcement-rules
+          use-enforcement-rules: true
+          
