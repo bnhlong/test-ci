@@ -33,6 +33,7 @@ jobs:
         with:
           api-key: ${{ secrets.BC_API_KEY }}
           use-enforcement-rules: true
-          repo-id: ${{ github.repository }}
-          branch: ${{ github.ref_name }}
+          file: Dockerfile
+          #repo-id: ${{ github.repository }}
+          #branch: ${{ github.ref_name }}
           
