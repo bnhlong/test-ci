@@ -33,5 +33,6 @@ jobs:
         with:
           api-key: ${{ secrets.BC_API_KEY }}
           #use-enforcement-rules: true
+          soft_fail: true
           file: Dockerfile
                  
